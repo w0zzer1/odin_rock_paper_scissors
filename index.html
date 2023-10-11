@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        tr{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
 </head>
-<body>
-    
+<body>    
+    <div class="content">
+        <h1>This is a Rock, Paper, Scissors game</h1>
+        <table>
+            <tr>
+                <td>Player score</td>
+                <td>Computer score</td>
+            </tr>
+            <tr>
+                <td class="playerScore">0</td>
+                <td class="computerScore">0</td>
+            </tr>
+        </table>
+        <h2 class="result">Let's play!</h2>
+    </div>
+
+    <button id="rpsbutton" value="rock">Rock</button>
+    <button id="rpsbutton" value="paper">Paper</button> 
+    <button id="rpsbutton" value="scissors">Scissors</button>
 </body>
 </html>
